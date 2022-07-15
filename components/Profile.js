@@ -8,16 +8,18 @@ yoginth: profile/0x0d | wallet/0x3A5bd1E37b099aE3386D13947b6a90d97675e5e3
 */
 
 import Link from "next/link";
-import { Etherscan_copy_link } from './fancyLinks'
+import { shorten_Ether_address } from './fancyLinks'
 
 export default function Profile(props) {
   const profile = props.profile;
+
+  const address_display = shorten_Ether_address(profile.ownedBy)
 
   // When displayFullProfile is true, we show more info.
   const displayFullProfile = props.displayFullProfile;
 
   console.log(profile)
-  
+
   return (
     <div className="p-8">
       <Link href={`/profile/${profile.id}`}>
@@ -50,7 +52,7 @@ export default function Profile(props) {
                   " (" + profile.name + ")"}
               </div>
               <div className="mt-2 text-xs text-slate-900">
-                <Etherscan_copy_link full_address={`${profile.ownedBy}`}></Etherscan_copy_link>
+                <Link href={`../wallet/${profile.ownedBy}`}>{address_display}</Link>
               </div>
               <div className="block mt-1 text-sm leading-tight font-medium text-black hover:underline">
                 {profile.bio}
@@ -60,12 +62,10 @@ export default function Profile(props) {
                 followers: {profile.stats.totalFollowers}
                 <p>(public+private) posts: {profile.stats.totalPosts}</p>
               </div>
-              <hr />
-              <Link href={`/wallet/${profile.ownedBy}`}>NFTs</Link>
             </div>
           </div>
         </div>
-      </Link>
-    </div>
+      </Link >
+    </div >
   );
 }
