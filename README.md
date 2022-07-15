@@ -16,7 +16,7 @@ PoK NFTs minted to @TheRoadToWeb3 students who complete the challenge :)
    1. ✅ add timestamp to each post, translating from server Zulu to localtime 🗸
    2. ✅ add posts count to each profile; add "like" "comments" "retweets" count to each post 🗸
    3. find+implement new endpoint from the [Lens API doc](https://docs.lens.xyz) [[src](https://github.com/aave/lens-api-examples)]
-      1. show NFTs owned by this profile/address pair 🗸
+      1. ✅ show NFTs owned by this profile/address pair 🗸
       2. replace "recommendedProfiles" with "members of R2W3 community"
 
 ## Links
