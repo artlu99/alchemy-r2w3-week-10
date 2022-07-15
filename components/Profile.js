@@ -42,10 +42,13 @@ export default function Profile(props) {
                 {profile.bio}
               </div>
               <div className="mt-2 text-sm text-slate-900">{profile.ownedBy}</div>
-              <p className="mt-2 text-xs text-slate-500">
-                following: {profile.stats.totalFollowing} followers:{" "}
-                {profile.stats.totalFollowers}
-              </p>
+              <div className="mt-2 text-xs text-slate-500 text-right">
+                (public+private) posts: {profile.stats.totalPosts}
+              </div>
+              <div className="mt-2 text-xs text-slate-500">
+                following: {profile.stats.totalFollowing} {" "}
+                followers: {profile.stats.totalFollowers}
+              </div>
             </div>
           </div>
         </div>

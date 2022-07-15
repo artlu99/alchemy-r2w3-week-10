@@ -2,20 +2,25 @@
 export default function Post(props) {
   const post = props.post;
 
-  var dtString = new Date(post.createdAt).toString().replace(/GMT.*/g,"") + '(local time)';
+  var dtString = new Date(post.createdAt).toString().replace(/GMT.*/g, "") + '(local time)';
 
   return (
     <div className="p-8">
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
           <div className="p-8">
-            <p className="mt-2 text-xs text-slate-500 text-right">
+            <div className="mt-2 text-xs text-slate-500 text-right">
               {dtString}
-            </p>
+            </div>
             <hr />
-            <p className="mt-2 text-xs text-slate-500 whitespace-pre-line">
+            <div className="mt-2 text-xs text-slate-500 whitespace-pre-line">
               {post.metadata.content}
-            </p>
+            </div>
+            <div className="mt-2 text-xs text-slate-500 text-right">
+              collects: {post.stats.totalAmountOfCollects} {" "}
+              comments: {post.stats.totalAmountOfComments} {" "}
+              mirrors: {post.stats.totalAmountOfMirrors}
+            </div>
           </div>
         </div>
       </div>
