@@ -1,7 +1,6 @@
 import { useQuery, useMutation } from "@apollo/client";
 import { useRouter } from "next/router";
 import fetchNFTQuery from "../../queries/fetchNFTQuery.js";
-import Profile from "../../components/Profile.js";
 import Nft from "../../components/Nft.js";
 
 export default function WalletPage() {

@@ -4,7 +4,7 @@ import fetchProfileQuery from "../../queries/fetchProfileQuery.js";
 import Profile from "../../components/Profile.js";
 import Post from "../../components/Post.js";
 
-export default function ProfilePage() {
+export default function PublicationsPage() {
   const router = useRouter();
   const { id } = router.query;
 
