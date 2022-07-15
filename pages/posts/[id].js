@@ -24,7 +24,7 @@ export default function ProfilePage() {
 
   return (
     <div className="flex flex-col p-8 items-center">
-      <Profile profile={data.profile} displayFullProfile={true} />
+      <Profile profile={data.profile} displayFullProfile={false} />
       {data.publications.items.map((post, idx) => {
         return <Post key={idx} post={post}/>;
       })}
