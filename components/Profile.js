@@ -25,7 +25,7 @@ export default function Profile(props) {
               ) : (
                 <div
                   style={{
-                    backgrondColor: "gray",
+                    backgroundColor: "gray",
                   }}
                   className="h-48 w-full object-cover md:h-full md:w-48"
                 />
