@@ -9,6 +9,10 @@
 
 PoK NFTs minted to @TheRoadToWeb3 students who complete the challenge :)
 
+## Challenges
+
+1. ✅ deploy to the web at [Lens-AL](https://lens-al.vercel.app/) 🗸
+
 ## Links
 * The [Alchemy](https://www.alchemy.com/) [Road to Web3](https://docs.alchemy.com/alchemy/road-to-web3/welcome-to-the-road-to-web3) [Week 10: How to Create a Decentralized Twitter with Lens Protocol](https://docs.alchemy.com/alchemy/road-to-web3/weekly-learning-challenges/10.-how-to-create-a-decentralized-twitter-with-lens-protocol) blog post
 * [Video TBA] with [@thatguyintech.lens](https://lenster.xyz/u/thatguyintech.lens) on the [Alchemy YouTube channel](https://www.youtube.com/channel/UCtvTdPZWUwW4whk9CLlCBug)
