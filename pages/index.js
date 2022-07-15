@@ -11,7 +11,6 @@ export default function Home() {
   return (
     <div>
       {data.recommendedProfiles.map((profile, index) => {
-        console.log(`Profile ${index}:`, profile);
         return (<Profile key={profile.id} profile={profile} displayFullProfile={false} />);
       })}
     </div>

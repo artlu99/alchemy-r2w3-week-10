@@ -14,7 +14,7 @@ export const Etherscan_copy_link = ({ full_address }) => {
 
     return (
         <div className="d-flex cursor-pointer hover:italic">
-            <a target={"_blank"} rel="noreferrer" href={`https://etherscan.io/${full_address}`}>{address_display} </a>
+            <a target={"_blank"} rel="noreferrer" href={`https://etherscan.io/address/${full_address}`}>{address_display} </a>
             <i className="fa fa-copy" onClick={addy_to_clip(`${full_address}`, `${address_display}`)}></i>
         </div>
     )
