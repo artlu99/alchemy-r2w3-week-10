@@ -1,6 +1,8 @@
 // components/Profile.js
 
 import Link from "next/link";
+import { Etherscan_copy_link } from './fancyLinks'
+
 export default function Profile(props) {
   const profile = props.profile;
 
@@ -38,16 +40,16 @@ export default function Profile(props) {
                   profile.name &&
                   " (" + profile.name + ")"}
               </div>
+              <div className="mt-2 text-xs text-slate-900">
+                <Etherscan_copy_link full_address={`${profile.ownedBy}`}></Etherscan_copy_link>
+              </div>
               <div className="block mt-1 text-sm leading-tight font-medium text-black hover:underline">
                 {profile.bio}
               </div>
-              <div className="mt-2 text-sm text-slate-900">{profile.ownedBy}</div>
               <div className="mt-2 text-xs text-slate-500 text-right">
-                (public+private) posts: {profile.stats.totalPosts}
-              </div>
-              <div className="mt-2 text-xs text-slate-500">
                 following: {profile.stats.totalFollowing} {" "}
                 followers: {profile.stats.totalFollowers}
+                <p>(public+private) posts: {profile.stats.totalPosts}</p>
               </div>
             </div>
           </div>
