@@ -14,7 +14,7 @@ export default function WalletPage() {
       request: {
         ownerAddress: addy,
         chainIds: [1], // 1:ethereum, 137:polygon, 42:kovan, 80001:mumbai
-        limit: 5
+        limit: 25
       },
     },
   });
@@ -25,7 +25,7 @@ export default function WalletPage() {
   console.log(data);
 
   return (
-    <div className="flex flex-col p-8 items-center">
+    <div className="flex flex-wrap gap-y-12 mt-4 w-5/6 gap-x-4 justify-center">
       {data.nfts.items.map((nft, idx) => {
         return <Nft key={idx} nft={nft}/>;
       })}
