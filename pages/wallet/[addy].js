@@ -13,8 +13,8 @@ export default function WalletPage() {
     variables: {
       request: {
         ownerAddress: addy,
-        chainIds: [1], // 1:ethereum, 137:polygon, 42:kovan, 80001:mumbai
-        limit: 25
+        chainIds: [137], // 1:ethereum, 137:polygon, 42:kovan, 80001:mumbai
+        limit: 50
       },
     },
   });
