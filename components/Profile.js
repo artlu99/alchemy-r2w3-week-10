@@ -41,7 +41,7 @@ export default function Profile(props) {
               />
             )}
           </div>
-          <div className="p-8">
+          <div className="p-8 w-full">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
               {profile.handle}
               {profile.name && " (" + profile.name + ")"}
@@ -55,9 +55,7 @@ export default function Profile(props) {
               </Link>
             </div>
             <div className="block mt-1 text-sm leading-tight font-medium text-black">
-              {displayFullProfile &&
-                profile.bio}
-
+              {displayFullProfile && profile.bio}
             </div>
             <div className="mt-2 text-xs text-slate-500 text-right">
               <p>following:
