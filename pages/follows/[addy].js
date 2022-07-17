@@ -12,7 +12,7 @@ export default function FollowsPage() {
     variables: {
       request: {
         address: addy,
-        limit: 10
+        limit: 50
       },
     },
   });
@@ -22,15 +22,11 @@ export default function FollowsPage() {
 
   console.log(data);
 
-  /*
-        {data.follows.items.map((followed_profile, idx) => {
-          return <Profile key={idx} profile={followed_profile}/>;
-        })}
-
-  */
   return (
     <div className="flex flex-col p-8 items-center">
-      <Profile profile={data.profile} displayFullProfile={false} />
+        {data.following.items.map((following_item, idx) => {
+          return <Profile key={idx} profile={following_item.profile}/>;
+        })}
     </div>
   );
 }

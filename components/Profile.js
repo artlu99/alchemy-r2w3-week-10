@@ -56,7 +56,7 @@ export default function Profile(props) {
             </div>
             <div className="mt-2 text-xs text-slate-500 text-right">
               <p>following:
-                <Link href={`/follows/${profile.id}`}>
+                <Link href={`/follows/${profile.ownedBy}`}>
                   {profile.stats.totalFollowing}
                 </Link>
               </p>
