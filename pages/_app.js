@@ -7,7 +7,7 @@ import client from "../apollo-client";
 function Header() {
   return (
     <header className="top-0 bg-lime-400 text-green-800 text-sm">
-      <p className="text-xs">This site currently provides "Read-Only" views of the Lens Protocol API.  Medium-term plans are to allow gated interaction with the Lens Protocol.</p>
+      <p className="text-xs">This site currently provides Read-Only views of the Lens Protocol API.  Medium-term plans are to allow gated interaction with the Lens Protocol.</p>
       <p> &nbsp; </p>
       <p className="underline">New users:</p>
       <p className="text-sm">- posts: click posts count</p>
