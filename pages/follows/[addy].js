@@ -18,15 +18,15 @@ export default function FollowsPage() {
   });
 
   if (loading) return "Loading..";
-  if (error) return "This page is not implemented yet..."; // `Error! ${error.message}`;
+  if (error) return `Error! ${error.message}`;
 
   console.log(data);
 
   return (
-    <div className="flex flex-col p-8 items-center">
-        {data.following.items.map((following_item, idx) => {
-          return <Profile key={idx} profile={following_item.profile}/>;
-        })}
+    <div>
+      {data.following.items.map((following_item) => {
+        return <Profile key={following_item.profile.id} profile={following_item.profile} displayFullProfile={true} />;
+      })}
     </div>
   );
 }

@@ -12,8 +12,8 @@ Public beta deployed [here](https://lens-cuxwx7z0d-artlu99.vercel.app/).
 ## Roadmap / Major milestones
 
 1. ✅ show NFTs owned by this profile/address pair 🗸
-2. show each profile's Following profiles
-      1. replace "recommendedProfiles" with "members of R2W3 community" based on Follows
+2. ✅ show each profile's Following profiles 🗸
+      1. replace "recommendedProfiles" with "members of R2W3 community" based on Follows 🗸
 3. show comments on posts
 4. navbar / breadcrumbs at top/bottom of page
 5. Lit Protocol SDK to token-gate access for MintKudos token holders
