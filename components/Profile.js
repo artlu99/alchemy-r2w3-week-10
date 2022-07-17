@@ -13,7 +13,7 @@ import { shorten_Ether_address } from './fancyLinks'
 export default function Profile(props) {
   const profile = props.profile;
 
-  const address_display = shorten_Ether_address(profile.ownedBy)
+  const address_display = shorten_Ether_address(profile.ownedBy);
 
   // When displayFullProfile is true, we show more info.
   const displayFullProfile = props.displayFullProfile;
@@ -48,7 +48,7 @@ export default function Profile(props) {
             </div>
             <div className="mt-2 text-xs text-slate-900">
               <Link href={`../wallet/${profile.ownedBy}`}>
-                {address_display}
+                {`${profile.id}` + " | " + address_display}
               </Link>
             </div>
             <div className="block mt-1 text-sm leading-tight font-medium text-black">
