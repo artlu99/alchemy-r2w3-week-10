@@ -1,40 +1,26 @@
-## Week 10 - How to Create a Decentralized Twitter with Lens Protocol
-[@artlu.lens](https://lenster.xyz/u/artlu.lens)
+## Lens-AL [by @artlu.lens](https://lenster.xyz/u/artlu.lens)
 
-🥦 How to Build Decentralized Twitter with Lens 🔥
+A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com/) [Road to Web3](https://docs.alchemy.com/alchemy/road-to-web3/welcome-to-the-road-to-web3) [Week 10](https://docs.alchemy.com/alchemy/road-to-web3/weekly-learning-challenges/10.-how-to-create-a-decentralized-twitter-with-lens-protocol).
+
+Public beta deployed [here](https://lens-cuxwx7z0d-artlu99.vercel.app/).
+
+## A Decentralized Social Network with Lens Protocol 🥦
 
 - Next.js w/ Apollo GraphQL client
-- Fetch profiles, posts, and more
-- Shoutouts to the MintKudos API, and Lit Protocol SDK
+- Lens Protocol via Lens API
 
-PoK NFTs minted to @TheRoadToWeb3 students who complete the challenge :)
+## Roadmap / Major milestones
 
-## Challenges
-
-1. ✅ deploy to the web at [Lens-AL](https://lens-al.vercel.app/) 🗸
-2. ✅ use Lens API to query+display new information that was not covered in the tutorial
-   1. ✅ add timestamp to each post, translating from server Zulu to localtime 🗸
-   2. ✅ add posts count to each profile; add "like" "comments" "retweets" count to each post 🗸
-   3. ✅ find+implement new endpoint from the [Lens API doc](https://docs.lens.xyz) [[src](https://github.com/aave/lens-api-examples)]
-      1. ✅ show NFTs owned by this profile/address pair 🗸
-      2. replace "recommendedProfiles" with "members of R2W3 community" based on Follows
-3. use Lit Protocol SDK to token-gate access to Lens protocol posts so that only MintKudos token holders can view them
-
-## Roadmap
-
-The git repository has been frozen at the end of Week 10 for submission.  The branch `20220717` represents the code at the end of Week 10.  Real programmers ship!
-
-The MVP (Minimum-Viable-Product) continues to evolve under branch `beyond-week-10` currently deployed [here](https://lens-cuxwx7z0d-artlu99.vercel.app/).
-
-1. navbar / breadcrumbs at top/bottom of page
-2. show comments on posts (partially done)
-3. Lit Protocol + MintKudos integration
-4. paging of API call results
-5. replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
+1. ✅ show NFTs owned by this profile/address pair 🗸
+2. show each profile's Following profiles
+      1. replace "recommendedProfiles" with "members of R2W3 community" based on Follows
+3. show comments on posts
+4. navbar / breadcrumbs at top/bottom of page
+5. Lit Protocol SDK to token-gate access for MintKudos token holders
+6. paging of API call results
+7. replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
 
 ## Links
-* The [Alchemy](https://www.alchemy.com/) [Road to Web3](https://docs.alchemy.com/alchemy/road-to-web3/welcome-to-the-road-to-web3) [Week 10: How to Create a Decentralized Twitter with Lens Protocol](https://docs.alchemy.com/alchemy/road-to-web3/weekly-learning-challenges/10.-how-to-create-a-decentralized-twitter-with-lens-protocol) blog post
-* [Video TBA] with [@thatguyintech.lens](https://lenster.xyz/u/thatguyintech.lens) on the [Alchemy YouTube channel](https://www.youtube.com/channel/UCtvTdPZWUwW4whk9CLlCBug)
 * Week 10 kick-off [tweet](https://twitter.com/thatguyintech/status/1547585019983499268) by [@thatguyintech](https://twitter.com/thatguyintech)
 * Join the [Lenster](https://lenster.xyz) [Road To Web3](https://lenster.xyz/communities/0x25c4-0x0c) community
 
