@@ -46,9 +46,6 @@ export default function Profile(props) {
               {profile.handle}
               {profile.name && " (" + profile.name + ")"}
             </div>
-            <div className="mt-2 text-xs text-slate-500 float-right">
-              ({profile.stats.totalFollowers} followers)
-            </div>
             <div className="mt-2 text-xs text-slate-900">
               <Link href={`../wallet/${profile.ownedBy}`}>
                 {address_display}
