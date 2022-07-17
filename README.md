@@ -22,7 +22,9 @@ PoK NFTs minted to @TheRoadToWeb3 students who complete the challenge :)
 
 ## Roadmap
 
-This repository will get frozen at the end of Week 10 for submission.  A fork will be created to continue to develop the MVP (Minimum-Viable-Product).
+The git repository has been frozen at the end of Week 10 for submission.  The branch `20220717` represents the code at the end of Week 10.  Real programmers ship!
+
+The MVP (Minimum-Viable-Product) continues to evolve under branch `beyond-week-10` currently deployed [here](https://lens-cuxwx7z0d-artlu99.vercel.app/).
 
 1. navbar / breadcrumbs at top/bottom of page
 2. show comments on posts (partially done)
