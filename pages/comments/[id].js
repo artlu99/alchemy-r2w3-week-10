@@ -14,7 +14,7 @@ export default function PublicationsPage() {
       request: { profileId: id },
       publicationsRequest: {
         profileId: id,
-        publicationTypes: ["POST"],
+        publicationTypes: ["COMMENT"],
       },
     },
   });
@@ -27,8 +27,11 @@ export default function PublicationsPage() {
   return (
     <div className="flex flex-col p-8 items-center">
       <Profile profile={data.profile} displayFullProfile={false} />
-      {data.publications.items.map((post) => {
-        return <Post key={post.id} post={post} displayProfile={false} />;
+      {data.publications.items.map((comment) => {
+        return (
+          <Post key={comment.mainPost.id} post={comment.mainPost} displayProfile={true} />
+          // <Post key={comment.id} post={comment} displayProfile={true} />
+        )
       })}
     </div>
   );

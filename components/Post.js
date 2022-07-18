@@ -1,7 +1,12 @@
 export default function Post(props) {
   const post = props.post;
 
+  // When displayProfile is true, we show the poster information.
+  const displayProfile = props.displayProfile;
+
   var dtString = new Date(post.createdAt).toString().replace(/GMT.*/g, "") + '(local time)';
+
+  console.log(post);
 
   return (
     <div className="p-8">
@@ -11,6 +16,13 @@ export default function Post(props) {
             <div className="mt-2 text-xs text-slate-500 float-right">
               {dtString}
             </div>
+            {
+              displayProfile ? (
+                <div className="mt-2 text-xs text-slate-500">
+                  {post.profile.id} | {post.profile.name}
+                </div>
+              ) : (" ")
+            }
             <div className="mt-2 text-xs text-slate-500">
               ({post.stats.totalAmountOfCollects} collects)
               ({post.stats.totalAmountOfMirrors} mirrors)
