@@ -7,7 +7,7 @@ export default function Nft(props) {
     <div className="w-1/6 flex flex-col">
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="p-8">
-          <img src={nft.originalContent.uri} />
+          <img src={nft.originalContent.uri} alt={nft.name} />
           <div className="mt-2 text-xs text-slate-500 whitespace-pre-line">
             {nft.name}
           </div>
