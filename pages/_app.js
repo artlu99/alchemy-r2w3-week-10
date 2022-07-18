@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import { ApolloProvider } from "@apollo/client";
 import client from "../apollo-client";
+import { lens_logo } from '../components/Lens-assets'
 
 function Header() {
   return (
@@ -20,8 +21,9 @@ function Nav() {
   return (
     <nav className="sticky top-0 bg-lime-400 text-green-800">
       <div className="text-xs text-center">(placeholder, should look roughly like Mozilla Pocket navbar)</div>
-      <div className="text-green-600 text-center">🥦 breadcrumbs : 1 2 3 🥦</div>
+      <div className="text-green-600 text-center">🌿 breadcrumbs : 1 2 3 🌿</div>
       <hr />
+      {lens_logo()}
     </nav>
   )
 }
