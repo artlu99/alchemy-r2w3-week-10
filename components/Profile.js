@@ -21,6 +21,7 @@ export default function Profile(props) {
                     ? profile.picture.original.url
                     : profile.picture.uri
                 }
+                alt={profile.id}
                 className="h-48 w-full object-cover md:h-full md:w-48"
               />
             ) : (
