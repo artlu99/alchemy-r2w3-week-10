@@ -2,9 +2,7 @@
 
 A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com/) [Road to Web3](https://docs.alchemy.com/alchemy/road-to-web3/welcome-to-the-road-to-web3) [Week 10](https://docs.alchemy.com/alchemy/road-to-web3/weekly-learning-challenges/10.-how-to-create-a-decentralized-twitter-with-lens-protocol).
 
-Public beta deployed [here](https://lens-cuxwx7z0d-artlu99.vercel.app/).
-
-## A Decentralized Social Network with Lens Protocol 🥦
+## A Decentralized Social Network with Lens Protocol 🌿
 
 - Next.js w/ Apollo GraphQL client
 - Lens Protocol via Lens API
@@ -15,10 +13,13 @@ Public beta deployed [here](https://lens-cuxwx7z0d-artlu99.vercel.app/).
 2. ✅ show each profile's Following profiles 🗸
       1. replace "recommendedProfiles" with "members of R2W3 community" based on Follows 🗸
 3. show comments on posts
-4. navbar / breadcrumbs at top/bottom of page
-5. Lit Protocol SDK to token-gate access for MintKudos token holders
-6. paging of API call results
-7. replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
+4. read from json for global config variables (e.g., initial wallet address)
+5. dark mode
+6. navbar / breadcrumbs at top/bottom of page (e.g., quick links to Lenster)
+7. Lit Protocol SDK to token-gate access for MintKudos token holders
+8. paging of API call results
+   1. show other (arbitrary) profile attributes set by dApps, such as the list of attributes
+9. replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
 
 ## Links
 * Week 10 kick-off [tweet](https://twitter.com/thatguyintech/status/1547585019983499268) by [@thatguyintech](https://twitter.com/thatguyintech)
