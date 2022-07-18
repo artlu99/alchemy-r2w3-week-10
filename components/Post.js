@@ -1,4 +1,3 @@
-// components/Post.js
 export default function Post(props) {
   const post = props.post;
 

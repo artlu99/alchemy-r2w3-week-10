@@ -1,12 +1,3 @@
-// components/Profile.js
-
-/*
-profile IDs for debugging:
-stani: profile/0x05 | wallet/0x2E21f5d32841cf8C7da805185A041400bF15f21A
-davidev: profile/0x16 | wallet/0x52EAF3F04cbac0a4B9878A75AB2523722325D4D4
-yoginth: profile/0x0d | wallet/0x3A5bd1E37b099aE3386D13947b6a90d97675e5e3
-*/
-
 import Link from "next/link";
 import { shorten_Ether_address } from './fancyLinks'
 

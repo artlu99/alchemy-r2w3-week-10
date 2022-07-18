@@ -1,4 +1,3 @@
-// components/Nft.js
 export default function Nft(props) {
   const nft = props.nft;
 

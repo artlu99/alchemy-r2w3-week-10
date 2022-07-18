@@ -1,7 +1,5 @@
 import { gql } from "@apollo/client";
 
-/* TODO: fix error 400 */
-
 export default gql`
 query(
   $request: FollowingRequest!
