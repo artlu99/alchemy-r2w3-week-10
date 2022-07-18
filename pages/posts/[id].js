@@ -22,11 +22,13 @@ export default function PublicationsPage() {
   if (loading) return "Loading..";
   if (error) return `Error! ${error.message}`;
 
+  console.log(data);
+
   return (
     <div className="flex flex-col p-8 items-center">
       <Profile profile={data.profile} displayFullProfile={false} />
-      {data.publications.items.map((post, idx) => {
-        return <Post key={idx} post={post}/>;
+      {data.publications.items.map((post) => {
+        return <Post key={post.id} post={post}/>;
       })}
     </div>
   );

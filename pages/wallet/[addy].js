@@ -21,12 +21,10 @@ export default function WalletPage() {
   if (loading) return "Loading..";
   if (error) return `Error! ${error.message}`;
 
-  console.log(data);
-
   return (
     <div className="flex flex-wrap gap-y-12 mt-4 w-5/6 gap-x-4 justify-center">
-      {data.nfts.items.map((nft, idx) => {
-        return <Nft key={idx} nft={nft}/>;
+      {data.nfts.items.map((nft) => {
+        return <Nft key={nft.symbol + nft.tokenId} nft={nft}/>;
       })}
     </div>
   );
