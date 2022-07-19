@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Post(props) {
   const post = props.post;
 
@@ -5,8 +7,6 @@ export default function Post(props) {
   const displayProfile = props.displayProfile;
 
   var dtString = new Date(post.createdAt).toString().replace(/GMT.*/g, "") + '(local time)';
-
-  console.log(post);
 
   return (
     <div className="p-8">
@@ -31,8 +31,12 @@ export default function Post(props) {
             <div className="mt-2 text-xs text-slate-500 whitespace-pre-line">
               {post.metadata.content}
             </div>
+            <hr />
             <div className="mt-2 text-xs text-slate-500 text-right">
-              comments: {post.stats.totalAmountOfComments} {" "}
+              (public+private) comments:&nbsp;
+              <Link href={`../comments/${post.id}`}>
+                {post.stats.totalAmountOfComments}
+              </Link>
             </div>
           </div>
         </div>

@@ -11,15 +11,15 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
 
 1. ✅ show NFTs owned by this profile/address pair 🗸
 2. ✅ show each profile's Following profiles 🗸
-      1. replace "recommendedProfiles" with "members of R2W3 community" based on Follows 🗸
-3. show comments on posts
-4. read from json for global config variables (e.g., initial wallet address)
+      1. ✅ replace "recommendedProfiles" with "members of R2W3 community" based on Follows 🗸
+3. show comments on posts 🗸
+4. read from json for global config variables (e.g., initial Follow address, page limits)
 5. dark mode
 6. navbar / breadcrumbs at top/bottom of page (e.g., quick links to Lenster)
 7. Lit Protocol SDK to token-gate access for MintKudos token holders
 8. paging of API call results
    1. show other (arbitrary) profile attributes set by dApps, such as the list of attributes
-9. replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
+9.  replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
 
 ## Links
 * Week 10 kick-off [tweet](https://twitter.com/thatguyintech/status/1547585019983499268) by [@thatguyintech](https://twitter.com/thatguyintech)
