@@ -16,14 +16,17 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
 4. read from json for global config variables (e.g., initial Follow address, page limits)
 5. dark mode
 6. navbar / breadcrumbs at top/bottom of page (e.g., quick links to Lenster)
-7. Lit Protocol SDK to token-gate access for MintKudos token holders
-8. paging of API call results
+7. recursive-with-limits instead of tree-based refactoring, so that comments-on-comments appears correctly
+8. Lit Protocol SDK to token-gate access for MintKudos token holders
+9. paging of API call results
    1. show other (arbitrary) profile attributes set by dApps, such as the list of attributes
-9.  replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
+10. replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
 
 ## Links
 * Week 10 kick-off [tweet](https://twitter.com/thatguyintech/status/1547585019983499268) by [@thatguyintech](https://twitter.com/thatguyintech)
-* Join the [Lenster](https://lenster.xyz) [Road To Web3](https://lenster.xyz/communities/0x25c4-0x0c) community
+* Join the [Lenster](https://lenster.xyz) [Road To Web3](https://lenster.xyz/communities/0x25c4-0x0c) Lenster community
+* [GraphiQL Bin](https://graphiqlbin.com/) for interactive query building, e.g., https://api.lens.dev/ endpoint h/t [@gabrieldg.lens (GdG)](https://lenster.xyz/u/gabrieldg.lens)
+)
 
 ### Deploy
 
