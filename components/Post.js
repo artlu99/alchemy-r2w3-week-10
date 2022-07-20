@@ -28,6 +28,7 @@ export default function Post(props) {
             <div className="mt-2 text-xs text-slate-500">
               ({post.stats.totalAmountOfCollects} collects)
               ({post.stats.totalAmountOfMirrors} mirrors)
+              ({post.stats.totalUpvotes}👍🏽:👎🏽{post.stats.totalDownvotes})
             </div>
             <hr />
             <div className="mt-2 text-xs text-slate-500 whitespace-pre-line">
