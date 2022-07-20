@@ -12,7 +12,7 @@ export default function FollowsPage() {
     variables: {
       request: {
         address: addy,
-        limit: 50
+        limit: process.env.NEXT_PUBLIC_LENSAPI_QUERY_LIMIT,
       },
     },
   });

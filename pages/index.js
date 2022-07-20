@@ -6,8 +6,8 @@ export default function Home() {
   const { loading, error, data } = useQuery(fetchFollowingQuery, {
     variables: {
       request: {
-        address: "0xF5FFF32CF83A1A614e15F25Ce55B0c0A6b5F8F2c",  // Albert
-        limit: 50
+        address: process.env.NEXT_PUBLIC_INITIAL_WALLET,  // Albert @thatguyintech
+        limit: process.env.NEXT_PUBLIC_LENSAPI_QUERY_LIMIT,
       },
     },
   });

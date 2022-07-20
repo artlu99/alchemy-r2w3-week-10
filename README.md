@@ -13,13 +13,10 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
 2. ✅ show each profile's Following profiles 🗸
       1. ✅ replace "recommendedProfiles" with "members of R2W3 community" based on Follows 🗸
 3. ✅ show comments on posts 🗸
-4. read from json for global config variables (e.g., initial Follow address, page limits)
-5. dark mode
-6. navbar / breadcrumbs at top/bottom of page (e.g., quick links to Lenster)
-8. Lit Protocol SDK to token-gate access for MintKudos token holders
-9. paging of API call results
-   1. show other (arbitrary) profile attributes set by dApps, such as the list of attributes
-10. replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
+4. dark mode
+5. navbar / breadcrumbs at top/bottom of page (e.g., quick links to Lenster)
+6. Lit Protocol SDK to token-gate access for MintKudos token holders
+7. show other (arbitrary) profile attributes set by dApps, such as the list of attributes
 
 ## Links
 * Week 10 kick-off [tweet](https://twitter.com/thatguyintech/status/1547585019983499268) by [@thatguyintech](https://twitter.com/thatguyintech)
@@ -28,8 +25,11 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
 )
 
 ### Technical debt
-1. Apollo "ensure all objects of type MetadataOutput have an ID"
-2. recurse-with-limits instead of tree-based navigation. comments-on-comments should appear correctly
+1. ✅ read from file for global config variables (e.g., initial Follow address, page limits) 🗸
+2. Apollo "ensure all objects of type MetadataOutput have an ID"
+3. recurse-with-limits instead of tree-based navigation. comments-on-comments should appear correctly
+4. paging of API call results
+5. replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
 
 ### Deploy
 

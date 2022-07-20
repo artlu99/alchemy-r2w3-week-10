@@ -13,7 +13,7 @@ export default function WalletPage() {
       request: {
         ownerAddress: addy,
         chainIds: [137], // 1:ethereum, 137:polygon, 42:kovan, 80001:mumbai
-        limit: 50
+        limit: process.env.NEXT_PUBLIC_LENSAPI_QUERY_LIMIT,
       },
     },
   });
