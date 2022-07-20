@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export default function Comment(props) {
-  const comment = props.post;  // this should be props.post, not props.comment
   // the Lens API / GraphQL returns comments as a type of post
+  const comment = props.post;  // hence, this is props.post, not props.comment
 
   var dtString = new Date(comment.createdAt).toString().replace(/GMT.*/g, "") + '(local time)';
 
@@ -13,7 +15,9 @@ export default function Comment(props) {
               {dtString}
             </div>
             <div className="mt-2 text-xs text-slate-500">
-              {comment.profile.id} | {comment.profile.handle}
+              <a href={`../posts/${comment.profile.id}`} id={`${comment.id}`}>
+                {comment.profile.id} | {comment.profile.handle}
+              </a>
             </div>
             <hr />
             <div className="mt-2 text-xs text-slate-500 whitespace-pre-line">

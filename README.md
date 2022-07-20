@@ -12,11 +12,10 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
 1. ✅ show NFTs owned by this profile/address pair 🗸
 2. ✅ show each profile's Following profiles 🗸
       1. ✅ replace "recommendedProfiles" with "members of R2W3 community" based on Follows 🗸
-3. show comments on posts 🗸
+3. ✅ show comments on posts 🗸
 4. read from json for global config variables (e.g., initial Follow address, page limits)
 5. dark mode
 6. navbar / breadcrumbs at top/bottom of page (e.g., quick links to Lenster)
-7. recursive-with-limits instead of tree-based refactoring, so that comments-on-comments appears correctly
 8. Lit Protocol SDK to token-gate access for MintKudos token holders
 9. paging of API call results
    1. show other (arbitrary) profile attributes set by dApps, such as the list of attributes
@@ -27,6 +26,10 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
 * Join the [Lenster](https://lenster.xyz) [Road To Web3](https://lenster.xyz/communities/0x25c4-0x0c) Lenster community
 * [GraphiQL Bin](https://graphiqlbin.com/) for interactive query building, e.g., https://api.lens.dev/ endpoint h/t [@gabrieldg.lens (GdG)](https://lenster.xyz/u/gabrieldg.lens)
 )
+
+### Technical debt
+1. Apollo "ensure all objects of type MetadataOutput have an ID"
+2. recurse-with-limits instead of tree-based navigation. comments-on-comments should appear correctly
 
 ### Deploy
 

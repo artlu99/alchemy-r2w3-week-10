@@ -2,8 +2,68 @@ import { gql } from "@apollo/client";
 
 export default gql`
   query (
+    $postRequest: PublicationQueryRequest!
     $request: PublicationsQueryRequest!
   ) {
+    publication( request: $postRequest) {
+      ... on Post {
+        id
+        createdAt
+        metadata {
+          content
+        }
+        profile {
+          id
+          name
+          handle
+        }
+        stats {
+          totalAmountOfCollects
+          totalAmountOfComments
+          totalAmountOfMirrors
+          totalDownvotes
+          totalUpvotes
+        }
+      }
+      ... on Comment {
+        id
+        createdAt
+        metadata {
+          content
+        }
+        profile {
+          id
+          name
+          handle
+        }
+        stats {
+          totalAmountOfCollects
+          totalAmountOfComments
+          totalAmountOfMirrors
+          totalDownvotes
+          totalUpvotes
+        }
+      }
+      ... on Mirror {
+        id
+        createdAt
+        metadata {
+          content
+        }
+        profile {
+          id
+          name
+          handle
+        }
+        stats {
+          totalAmountOfCollects
+          totalAmountOfComments
+          totalAmountOfMirrors
+          totalDownvotes
+          totalUpvotes
+        }
+      }
+    },
     publications( request: $request) {
       pageInfo {
         prev
@@ -11,7 +71,6 @@ export default gql`
         totalCount
       }
       items {
-
         ... on Comment {
           id
           appId
@@ -39,5 +98,6 @@ export default gql`
         }
       }
     }
+    
   }
 `;

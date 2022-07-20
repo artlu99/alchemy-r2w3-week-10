@@ -19,7 +19,9 @@ export default function Post(props) {
             {
               displayProfile ? (
                 <div className="mt-2 text-xs text-slate-500">
-                  {post.profile.id} | {post.profile.name}
+                  <a href={`../posts/${post.profile.id}`} id={`${post.id}`}>
+                    {post.profile.id} | {post.profile.name}
+                  </a>
                 </div>
               ) : (" ")
             }

@@ -9,6 +9,7 @@ export function Header() {
       <p className="text-sm">- posts: click posts count</p>
       <p className="text-sm">- NFTs: click wallet address</p>
       <p className="text-sm">- frens: click following count</p>
+      <p className="text-sm">- comments: click comments count</p>
       <hr />
     </header>
   )
