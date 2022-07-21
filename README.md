@@ -13,7 +13,7 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
 2. ✅ show each profile's Following profiles 🗸
       1. ✅ replace "recommendedProfiles" with "members of R2W3 community" based on Follows 🗸
 3. ✅ show comments on posts 🗸
-4. dark mode
+4. dark mode ([[src](https://blog.logrocket.com/dark-mode-in-react-an-in-depth-guide/)], with TailwindCSS [[src](https://nextjsdev.com/add-dark-mode-in-nextjs-app-using-tailwind-css-dark-mode/)])
 5. navbar / breadcrumbs at top/bottom of page (e.g., quick links to Lenster)
 6. Lit Protocol SDK to token-gate access for MintKudos token holders
 7. show other (arbitrary) profile attributes set by dApps, such as the list of attributes

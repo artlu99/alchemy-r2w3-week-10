@@ -10,17 +10,17 @@ export default function Comment(props) {
     <div className="p-8">
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
-          <div className="p-8">
-            <div className="mt-2 text-xs text-slate-500 float-right">
+          <div className="p-8 text-xs">
+            <div className="mt-2 float-right">
               {dtString}
             </div>
-            <div className="mt-2 text-xs text-slate-500">
+            <div className="mt-2">
               <a href={`../posts/${comment.profile.id}`} id={`${comment.id}`}>
                 {comment.profile.id} | {comment.profile.handle}
               </a>
             </div>
             <hr />
-            <div className="mt-2 text-xs text-slate-500 whitespace-pre-line">
+            <div className="mt-2 whitespace-pre-line">
               {comment.metadata.content}
             </div>
           </div>

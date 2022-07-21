@@ -38,7 +38,7 @@ export default function Profile(props) {
               {profile.handle}
               {profile.name && " (" + profile.name + ")"}
             </div>
-            <div className="mt-2 text-xs text-slate-900">
+            <div className="mt-2 text-xs">
               <Link href={`../wallet/${profile.ownedBy}`}>
                 {`${profile.id}` + " | " + address_display}
               </Link>
@@ -46,7 +46,7 @@ export default function Profile(props) {
             <div className="block mt-1 text-sm leading-tight font-medium text-black">
               {displayFullProfile && profile.bio}
             </div>
-            <div className="mt-2 text-xs text-slate-500 text-right">
+            <div className="mt-2 text-xs text-right">
               <p>following:
                 <Link href={`/follows/${profile.ownedBy}`}>
                   {profile.stats.totalFollowing}
