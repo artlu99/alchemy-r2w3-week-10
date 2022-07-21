@@ -27,11 +27,12 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
 
 ### Technical debt
 1. ✅ read from file for global config variables (e.g., initial Follow address, page limits) 🗸
-2. icons for navbar text links, should look roughly like Mozilla Pocket navbar
-3. Apollo "ensure all objects of type MetadataOutput have an ID"
-4. recurse-with-limits instead of tree-based navigation. comments-on-comments should appear correctly
-5. paging of API call results
-6. replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
+2. remove wallet addresses, let the webapp remember/figure out the profileId mapping
+3. icons for navbar text links, should look roughly like Mozilla Pocket navbar
+4. Apollo "ensure all objects of type MetadataOutput have an ID"
+5. recurse-with-limits instead of tree-based navigation. comments-on-comments should appear correctly
+6. paging of API call results
+7. replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
 
 ### Deploy
 

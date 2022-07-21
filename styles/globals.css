@@ -4,12 +4,15 @@
 
 @layer base {
     body {
-      @apply bg-white text-slate-500 dark:bg-gray-800 dark:text-slate-400;
+      @apply bg-white text-slate-500 dark:bg-gray-800 dark:text-slate-300;
     }
     header {
-      @apply text-sm;
+      @apply text-sm bg-lime-400 text-green-800 dark:bg-lime-600 dark:text-green-100;
     }
     nav {
-      @apply text-sm;
+      @apply text-sm bg-lime-400 text-green-800 dark:bg-lime-600 dark:text-green-100;
+    }
+    footer {
+      @apply text-xs bg-lime-400 text-green-800 dark:bg-lime-600 dark:text-green-100;
     }
   }
