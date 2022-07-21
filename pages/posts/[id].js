@@ -25,7 +25,7 @@ export default function PublicationsPage() {
   console.log(data);
 
   return (
-    <div className="flex flex-col p-8 items-center">
+    <div className="flex flex-col p-2 items-center">
       <Profile profile={data.profile} displayFullProfile={false} />
       {data.publications.items.map((post) => {
         return <Post key={post.id} post={post} displayProfile={false} />;

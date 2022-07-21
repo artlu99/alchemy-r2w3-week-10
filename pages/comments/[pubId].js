@@ -32,7 +32,7 @@ export default function PublicationsPage() {
   // TODO: add pictures for original poster, commenters
 
   return (
-    <div className="flex flex-col p-8 items-center">
+    <div className="flex flex-col p-2 items-center">
       <Post key={data.publication.id} post={data.publication} displayProfile={true} />
       {data.publications.items.map((comment) => {
         return (

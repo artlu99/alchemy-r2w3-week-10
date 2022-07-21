@@ -9,10 +9,10 @@ export default function Post(props) {
   var dtString = new Date(post.createdAt).toString().replace(/GMT.*/g, "") + '(local time)';
 
   return (
-    <div className="p-8">
+    <div className="p-2">
       <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
-          <div className="p-8 text-xs">
+          <div className="p-2 text-xs">
             <div className="mt-2 float-right">
               {dtString}
             </div>
