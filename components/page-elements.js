@@ -1,15 +1,16 @@
+import Link from "next/link";
 import { lens_logo } from '../components/Lens-assets'
 
 export function Header() {
   return (
-    <header className="top-0 bg-lime-400 text-green-800 text-sm">
+    <header className="top-0 bg-lime-400 text-green-800">
       <p className="text-xs">This site currently provides Read-Only views of the Lens Protocol API.  Medium-term plans are to allow gated interaction with the Lens Protocol.</p>
       <p> &nbsp; </p>
       <p className="underline">New users:</p>
-      <p className="text-sm">- posts: click posts count</p>
-      <p className="text-sm">- NFTs: click wallet address</p>
-      <p className="text-sm">- frens: click following count</p>
-      <p className="text-sm">- comments: click comments count</p>
+      <p>- posts: click posts count</p>
+      <p>- NFTs: click wallet address</p>
+      <p>- frens: click following count</p>
+      <p>- comments: click comments count</p>
       <hr />
     </header>
   )
@@ -18,8 +19,15 @@ export function Header() {
 export function Nav() {
   return (
     <nav className="sticky top-0 bg-lime-400 text-green-800">
-      <div className="text-xs text-center">(placeholder, should look roughly like Mozilla Pocket navbar)</div>
-      <div className="text-green-600 text-center">🌿 breadcrumbs : 1 2 3 🌿</div>
+      <div className="text-green-600 text-center">🌿
+        &nbsp;
+        <Link href="/">Home</Link> |&nbsp;
+        <Link href="/posts/0x25c4">posts</Link> &nbsp;
+        <Link href="/follows/0xF5FFF32CF83A1A614e15F25Ce55B0c0A6b5F8F2c">follows</Link> &nbsp;
+        <Link href="/comments/0x25c4-0x0e">comments</Link> &nbsp;
+        <Link href="/wallet/0xF5FFF32CF83A1A614e15F25Ce55B0c0A6b5F8F2c">wallet</Link>&nbsp;
+        |&nbsp;<Link href="https://www.lenster.xyz">Lenster</Link>&nbsp;
+        🌿</div>
       <hr />
       {lens_logo()}
     </nav>

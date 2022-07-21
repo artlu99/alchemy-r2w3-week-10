@@ -6,4 +6,10 @@
     body {
       @apply text-slate-500;
     }
-}
+    header {
+      @apply text-sm;
+    }
+    nav {
+      @apply text-sm;
+    }
+  }

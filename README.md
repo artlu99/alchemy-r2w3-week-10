@@ -14,7 +14,8 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
       1. ✅ replace "recommendedProfiles" with "members of R2W3 community" based on Follows 🗸
 3. ✅ show comments on posts 🗸
 4. dark mode ([[src](https://blog.logrocket.com/dark-mode-in-react-an-in-depth-guide/)], with TailwindCSS [[src](https://nextjsdev.com/add-dark-mode-in-nextjs-app-using-tailwind-css-dark-mode/)])
-5. navbar / breadcrumbs at top/bottom of page (e.g., quick links to Lenster)
+5. ✅ navbar at top/bottom of page (e.g., quick links to Lenster) 🗸
+   1. dynamic breadcrumbs
 6. Lit Protocol SDK to token-gate access for MintKudos token holders
 7. show other (arbitrary) profile attributes set by dApps, such as the list of attributes
 
@@ -26,10 +27,11 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
 
 ### Technical debt
 1. ✅ read from file for global config variables (e.g., initial Follow address, page limits) 🗸
-2. Apollo "ensure all objects of type MetadataOutput have an ID"
-3. recurse-with-limits instead of tree-based navigation. comments-on-comments should appear correctly
-4. paging of API call results
-5. replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
+2. icons for navbar text links, should look roughly like Mozilla Pocket navbar
+3. Apollo "ensure all objects of type MetadataOutput have an ID"
+4. recurse-with-limits instead of tree-based navigation. comments-on-comments should appear correctly
+5. paging of API call results
+6. replace Lens API call to get NFTs, with Alchemy NFT API call (slightly cleaner, simpler)
 
 ### Deploy
 
