@@ -11,7 +11,7 @@ export default function Profile(props) {
 
   return (
     <div className="p-8">
-      <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
           <div className="md:shrink-0">
             {profile.picture ? (
@@ -43,7 +43,7 @@ export default function Profile(props) {
                 {`${profile.id}` + " | " + address_display}
               </Link>
             </div>
-            <div className="block mt-1 text-sm leading-tight font-medium text-black">
+            <div className="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
               {displayFullProfile && profile.bio}
             </div>
             <div className="mt-2 text-xs text-right">
