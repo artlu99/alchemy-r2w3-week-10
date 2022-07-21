@@ -82,22 +82,23 @@ export default gql`
             id
             handle
             picture {
-              ... on MediaSet {
-                __typename
-                small {
-                  url
-                }
-              }
               ... on NftImage {
-                __typename
+                contractAddress
+                tokenId
                 uri
                 verified
               }
+              ... on MediaSet {
+                original {
+                  url
+                  mimeType
+                }
+              }
+              __typename
             }
           }
         }
       }
     }
-    
   }
 `;

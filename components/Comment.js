@@ -11,17 +11,38 @@ export default function Comment(props) {
       <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
           <div className="w-full p-2 text-xs">
-            <div className="mt-2 float-right">
-              {dtString}
+            <div className="flex">
+              <div className="p-2 w-12 shrink-0">
+                {comment.profile.picture ? (
+                  <img
+                    src={
+                      comment.profile.picture.original
+                        ? comment.profile.picture.original.url
+                        : comment.profile.picture.uri
+                    }
+                    alt={comment.id}
+                    className="h-12 w-full object-cover"
+                  />
+                ) : (
+                  <div
+                    style={{
+                      backgroundColor: "gray",
+                    }}
+                    className="h-12 w-full object-cover"
+                  />
+                )}
+
+              </div>
+              <div className="mt-2 whitespace-pre-line">
+                {comment.metadata.content}
+              </div>
             </div>
+            <hr />
+            <div className="mt-2 float-right">{dtString}</div>
             <div className="mt-2">
               <a href={`../posts/${comment.profile.id}`} id={`${comment.id}`}>
                 {comment.profile.id} | {comment.profile.handle}
               </a>
-            </div>
-            <hr />
-            <div className="mt-2 whitespace-pre-line">
-              {comment.metadata.content}
             </div>
           </div>
         </div>
