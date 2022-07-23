@@ -31,7 +31,6 @@ export default function Comment(props) {
                     className="h-12 w-full object-cover"
                   />
                 )}
-
               </div>
               <div className="mt-2 whitespace-pre-line">
                 {comment.metadata.content}

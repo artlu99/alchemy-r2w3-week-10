@@ -29,7 +29,7 @@ export default function PublicationsPage() {
 
   console.log(data);
 
-  // TODO: add pictures for original poster, commenters
+  // TODO: add picture for original poster
 
   return (
     <div className="flex-col p-2 items-center">
