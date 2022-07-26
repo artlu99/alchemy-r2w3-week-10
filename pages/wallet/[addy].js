@@ -1,4 +1,4 @@
-import { useQuery, useMutation } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { useRouter } from "next/router";
 import fetchNFTQuery from "../../queries/fetchNFTQuery.js";
 import Nft from "../../components/Nft.js";
@@ -24,7 +24,7 @@ export default function WalletPage() {
   return (
     <div className="flex flex-wrap gap-y-12 mt-4 w-5/6 gap-x-4 justify-center">
       {data.nfts.items.map((nft) => {
-        return <Nft key={nft.symbol + nft.tokenId} nft={nft}/>;
+        return <Nft key={nft.symbol + nft.tokenId} nft={nft} />;
       })}
     </div>
   );

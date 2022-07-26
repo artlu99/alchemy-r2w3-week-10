@@ -1,4 +1,4 @@
-import { useQuery, useMutation } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { useRouter } from "next/router";
 import fetchFollowingQuery from "../../queries/fetchFollowingQuery.js";
 import Profile from "../../components/Profile.js";

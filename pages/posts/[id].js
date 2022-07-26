@@ -1,4 +1,4 @@
-import { useQuery, useMutation } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { useRouter } from "next/router";
 import fetchProfileQuery from "../../queries/fetchProfileQuery.js";
 import Profile from "../../components/Profile.js";
