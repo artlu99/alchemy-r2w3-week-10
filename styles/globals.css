@@ -15,4 +15,7 @@
     footer {
       @apply text-xs bg-lime-400 text-green-800 dark:bg-lime-600 dark:text-green-100;
     }
+    a {
+      @apply hover:underline
+    }
   }
