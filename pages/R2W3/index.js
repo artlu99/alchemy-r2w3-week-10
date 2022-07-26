@@ -84,8 +84,7 @@ export default function Home() {
         return (
             <div className="flex min-h-screen">
                 <div className="p-8 text-center">
-                    <button onClick={saveSigningCondition}>Save Signing Condition</button>
-                    |
+                    <button className="hidden" onClick={saveSigningCondition}>Save Signing Condition|</button>
                     <button onClick={retrieveJWT}>Retrieve JWT</button>
                 </div>
             </div>
