@@ -6,14 +6,22 @@ import { lens_logo } from '../components/Lens-assets'
 
 export function Header() {
   return (
-    <header className="top-0">
+    <header className="top-0 text-xs">
       <p className="float-right">
         <img className="inline" alt="Alchemy" src="https://www.gitbook.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=1.6500000953674316,format=auto/https%3A%2F%2F3169887760-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-MB17w56kk7ZnRMWdqOL%252Favatar-1631043648701.png%3Fgeneration%3D1631043649203081%26alt%3Dmedia" height="14" width="14" />
-        inspired by <a href="https://www.alchemy.com/">
-          Alchemy</a> <a href="https://docs.alchemy.com/alchemy/road-to-web3/welcome-to-the-road-to-web3">Road to Web3</a>
+        &nbsp;my&nbsp; 
+        <a href="https://docs.alchemy.com/alchemy/road-to-web3/weekly-learning-challenges/10.-how-to-create-a-decentralized-twitter-with-lens-protocol">Week 10</a>&nbsp;
+        <a href="https://lens-al-git-20220717-artlu99.vercel.app/">project</a>
+        &nbsp;on the&nbsp;
+        <a href="https://www.alchemy.com/">Alchemy</a>&nbsp;
+        <a href="https://docs.alchemy.com/alchemy/road-to-web3/welcome-to-the-road-to-web3">Road to Web3</a>
       </p>
       <p> &nbsp; </p>
-      <p className="text-xs">This site currently provides Read-Only views of the Lens Protocol API.</p>
+      <p>Lens Protocol social network via the LensAPI</p>
+      <p><span className="italic">plus</span> Kudos token-gated content</p>
+      <p> &nbsp; </p>
+      <p>try Dark Mode</p>
+      <p>~special content for RTW3 frens with Week 3 POKs~</p>
       <hr />
     </header>
   )
@@ -65,7 +73,7 @@ export function Footer() {
     <footer className="sticky bottom-0">
       <hr />
       <p className="float-right">
-        <a href="https://github.com/artlu99/alchemy-r2w3-week-10/tree/beyond-week-10">GitHub</a>  &nbsp;
+        <a href="https://github.com/artlu99/alchemy-r2w3-week-10/">GitHub</a>  &nbsp;
         <a href="https://www.twitter.com/artlu99">@artlu99</a>
       </p>
       <div className="text-center text-sm mr-2 font-bold">
