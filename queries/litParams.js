@@ -1,6 +1,6 @@
 export const lit_chain = 'polygon';
 
-// TokenId 611 is Week Two
+// TokenId 674 is Week Three
 export const accessControlConditions = [
     {
         contractAddress: '0x60576A64851C5B42e8c57E3E4A5cF3CF4eEb2ED6',
@@ -8,7 +8,7 @@ export const accessControlConditions = [
         method: 'balanceOf',
         parameters: [
             ':userAddress',
-            '611'
+            '674'
         ],
         returnValueTest: {
             comparator: '>',

@@ -4,12 +4,15 @@ import { lit_chain, accessControlConditions, resourceId } from "../../queries/li
 
 
 export default function Home() {
-    const [connected, setConnected] = useState()
+    const [connected, setConnected] = useState();
+    const [verifiedCredential, setVerifiedCredential] = useState();
 
     async function disconnect() {
         setConnected(false);
+        setVerifiedCredential(false);
     }
 
+    // this is an admin style function, not a normal user function
     async function saveSigningCondition() {
         const litNodeClient = new LitJsSdk.LitNodeClient({
             alertWhenUnauthorized: false,
@@ -40,6 +43,8 @@ export default function Home() {
         await litNodeClient.connect()
         var authSig = await LitJsSdk.checkAndSignAuthMessage({ chain: lit_chain });
 
+        setConnected(true)
+
         try {
             const jwt = await litNodeClient.getSignedToken({
                 accessControlConditions: accessControlConditions,
@@ -60,33 +65,46 @@ export default function Home() {
                 payload.extraData !== resourceId.extraData
             ) {
                 console.log("JWT payload values do not match expected")
-                setConnected(false)
+                setVerifiedCredential(false)
             } else {
-                setConnected(true)
+                setVerifiedCredential(true)
             }
         } catch (err) {
-            console.log(err);
+            console.log(err)
+            setVerifiedCredential(false)
         }
     }
 
     if (connected) {
-        return (
-            <div className="flex min-h-screen">
-                <div className="p-8 text-center">
-                    <div className="font-bold"><h1>Hey now, you have made it through the gate!</h1></div>
-                    <button onClick={disconnect}>Disconnect</button>
+        if (verifiedCredential) {
+            return (
+                <div className="flex min-h-screen">
+                    <div className="p-8 text-center">
+                        <div className="font-bold"><h1>Welcome, fren!</h1></div>
+                        <button onClick={disconnect}>Disconnect</button>
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        } else {
+            return (
+                <div className="flex min-h-screen">
+                    <div className="p-8 text-center">
+                        <div className="font-bold"><h1>Gm, please sign with a wallet which holds a Week 3 PoK.</h1></div>
+                        <button onClick={disconnect}>Disconnect</button>
+                    </div>
+                </div>
+
+            )
+        }
     } else {
         return (
             <div className="flex min-h-screen">
                 <div className="p-8 text-center">
                     <button className="hidden" onClick={saveSigningCondition}>Save Signing Condition|</button>
-                    <button onClick={retrieveJWT}>Retrieve JWT</button>
+                    <button onClick={retrieveJWT}>Sign in</button>
+                    <div className="text-xs">(please use a wallet that holds a MintKudos🎉 Alchemy Road To Web3 Week3 PoK)</div>
                 </div>
             </div>
-
         )
     }
 }
