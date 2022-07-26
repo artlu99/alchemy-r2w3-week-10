@@ -49,13 +49,13 @@ export default function Profile(props) {
             <div className="mt-2 text-xs text-right">
               <p>following:
                 <Link href={`/follows/${profile.ownedBy}`}>
-                  {profile.stats.totalFollowing}
+                  {profile.stats.totalFollowing.toLocaleString()}
                 </Link>
               </p>
               <p>
                 (public+private) posts:
                 <Link href={`/posts/${profile.id}`}>
-                  {profile.stats.totalPosts}
+                  {profile.stats.totalPosts.toLocaleString()}
                 </Link>
               </p>
             </div>

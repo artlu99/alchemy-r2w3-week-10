@@ -26,9 +26,9 @@ export default function Post(props) {
               ) : (" ")
             }
             <div className="mt-2">
-              ({post.stats.totalAmountOfCollects} collects)
-              ({post.stats.totalAmountOfMirrors} mirrors)
-              ({post.stats.totalUpvotes}👍🏽:👎🏽{post.stats.totalDownvotes})
+              ({post.stats.totalAmountOfCollects.toLocaleString()} collects)
+              ({post.stats.totalAmountOfMirrors.toLocaleString()} mirrors)
+              ({post.stats.totalUpvotes.toLocaleString()}👍🏽:👎🏽{post.stats.totalDownvotes.toLocaleString()})
             </div>
             <hr />
             <div className="mt-2 whitespace-pre-line">
@@ -38,7 +38,7 @@ export default function Post(props) {
             <div className="mt-2 text-right">
               (public+private) comments:&nbsp;
               <Link href={`../comments/${post.id}`}>
-                {post.stats.totalAmountOfComments}
+                {post.stats.totalAmountOfComments.toLocaleString()}
               </Link>
             </div>
           </div>
