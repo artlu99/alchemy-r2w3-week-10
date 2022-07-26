@@ -18,7 +18,7 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
 5. ✅ navbar at top/bottom of page (e.g., quick links to Lenster) 🗸
    1. dynamic breadcrumbs
 6. ✅ Lit Protocol SDK to token-gate access 🔥 🗸
-   1. for MintKudos token holders 🔥+🎉
+   1. ✅ for MintKudos Road To Web3 Week2 token holders 🔥+🎉 🗸
 7. show other (arbitrary) profile attributes set by dApps, such as the list of attributes
 8. add GDPR-compliant, open-source lite [analytics](https://umami.is/)
 

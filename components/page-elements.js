@@ -53,7 +53,7 @@ export function Nav() {
         <Link href="https://lens.xyz" alt="Lens Protocol">🌿</Link>&nbsp;
         {renderThemeChanger()}
       </div>
-      <div className="text-center"><Link href="/R2W3" alt="Road To Web3">🔥+🎉</Link></div>
+      <div className="text-center"><Link href="/RTW3" alt="Road To Web3">🔥+🎉</Link></div>
       <hr />
       {lens_logo()}
     </nav>

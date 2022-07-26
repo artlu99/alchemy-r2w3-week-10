@@ -65,9 +65,7 @@ export default function Home() {
                 setConnected(true)
             }
         } catch (err) {
-            console.log("accessControlConditions:", accessControlConditions)
-            console.log("resourceId:", resourceId)
-            console.log('error: ', err)
+            console.log(err);
         }
     }
 
