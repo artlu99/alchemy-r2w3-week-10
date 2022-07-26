@@ -4,10 +4,10 @@ export const lit_chain = 'polygon';
 // Lit RPC calls are currently failing
 // https://lit-share-modal-v3-playground.netlify.app/ reports '611' is invalid 
 // in red: ERC1155 token id is invalid
-export const accessControlConditionsKudos = [
+export const accessControlConditions = [
     {
         chain: 'polygon',
-        contractAddress: '0x74F77E0E4F3E3eFfBD55fd1F85C00C921D7Af160',
+        contractAddress: '0x60576A64851C5B42e8c57E3E4A5cF3CF4eEb2ED6',
         method: 'balanceOf',
         parameters: [
             ':userAddress',
@@ -21,7 +21,7 @@ export const accessControlConditionsKudos = [
     }
 ];
 
-export const accessControlConditions = [
+export const accessControlConditionsSimple = [
     {
         "contractAddress": "",
         "standardContractType": "",
