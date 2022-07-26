@@ -17,14 +17,22 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
 4. ✅ dark mode ([[src](https://blog.logrocket.com/dark-mode-in-react-an-in-depth-guide/)], with TailwindCSS [[src](https://nextjsdev.com/add-dark-mode-in-nextjs-app-using-tailwind-css-dark-mode/)]) 🗸
 5. ✅ navbar at top/bottom of page (e.g., quick links to Lenster) 🗸
    1. dynamic breadcrumbs
-6. Lit Protocol SDK to token-gate access for MintKudos token holders
+6. ✅ Lit Protocol SDK to token-gate access 🔥 🗸
+   1. for MintKudos token holders 🔥+🎉
 7. show other (arbitrary) profile attributes set by dApps, such as the list of attributes
+8. add GDPR-compliant, open-source lite [analytics](https://umami.is/)
 
 ## Links
 * Week 10 kick-off [tweet](https://twitter.com/thatguyintech/status/1547585019983499268) by [@thatguyintech](https://twitter.com/thatguyintech)
 * Join the [Lenster](https://lenster.xyz) [Road To Web3](https://lenster.xyz/communities/0x25c4-0x0c) Lenster community
-* [GraphiQL Bin](https://graphiqlbin.com/) for interactive query building, e.g., https://api.lens.dev/ endpoint h/t [@gabrieldg.lens (GdG)](https://lenster.xyz/u/gabrieldg.lens)
+* [GraphiQL Bin](https://graphiqlbin.com/) for interactive query building
+  * for endpoint, use: https://api.lens.dev/
+  * h/t [@gabrieldg.lens (GdG)](https://lenster.xyz/u/gabrieldg.lens)
 )
+* Lit Protocol
+  * SDK [docs](https://developer.litprotocol.com/SDK/intro)
+  * JS SDK API [docs](https://lit-protocol.github.io/lit-js-sdk/api_docs_html/index.html)
+  * [@nader.lens](https://lenster.xyz/u/nader.lens)'s useful [example](https://github.com/dabit3/nextjs-lit-token-gating)
 
 ### Technical debt
 1. ✅ read from file for global config variables (e.g., initial Follow address, page limits) 🗸

@@ -14,8 +14,6 @@ export function Header() {
       </p>
       <p> &nbsp; </p>
       <p className="text-xs">This site currently provides Read-Only views of the Lens Protocol API.</p>
-      <p className="text-xs">Medium-term plans are to allow gated interaction with the Lens Protocol.</p>
-      <p> &nbsp; </p>
       <hr />
     </header>
   )
@@ -55,6 +53,7 @@ export function Nav() {
         <Link href="https://lens.xyz" alt="Lens Protocol">🌿</Link>&nbsp;
         {renderThemeChanger()}
       </div>
+      <div className="text-center"><Link href="/R2W3" alt="Road To Web3">🔥+🎉</Link></div>
       <hr />
       {lens_logo()}
     </nav>
