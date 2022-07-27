@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Image } from 'next/image'
 import LitJsSdk from 'lit-js-sdk'
 import { lit_chain, accessControlConditions, resourceId } from "../../queries/litParams.js"
 
@@ -237,7 +236,7 @@ export default function Home() {
                                 <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
                                     <div className="md:flex">
                                         <div className="shrink-0">
-                                                <img height="100" width="100" alt="elonmusk" src="https://pbs.twimg.com/profile_images/1529956155937759233/Nyn1HZWF_400x400.jpg" />
+                                            <img height="100" width="100" alt="elonmusk" src="https://pbs.twimg.com/profile_images/1529956155937759233/Nyn1HZWF_400x400.jpg" />
                                         </div>
                                         <div className="p-2 w-full">
                                             <div className="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
@@ -255,7 +254,7 @@ export default function Home() {
                                 <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
                                     <div className="md:flex">
                                         <div className="shrink-0">
-                                                <img height="100" width="100" alt="eIonmusk-fake" src="https://pbs.twimg.com/profile_images/1529956155937759233/Nyn1HZWF_400x400.jpg" />
+                                            <img height="100" width="100" alt="eIonmusk-fake" src="https://pbs.twimg.com/profile_images/1529956155937759233/Nyn1HZWF_400x400.jpg" />
                                         </div>
                                         <div className="p-2 w-full">
                                             <div className="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
@@ -303,7 +302,9 @@ export default function Home() {
                     <div className="text-xs">(please use a wallet that holds a MintKudos🎉 Alchemy Road To Web3 Week3 PoK)</div>
                     <div className="p-8">
                         <button type="button" onClick={retrieveJWT} className="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-2">
-                            <svg className="w-4 h-4 mr-2 -ml-1 text-[#626890]" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="ethereum" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"></path></svg>
+                            <svg className="w-8 h-8" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m29 10.2c-.7-.4-1.6-.4-2.4 0l-5.6 3.3-3.8 2.1-5.5 3.3c-.7.4-1.6.4-2.4 0l-4.3-2.6c-.7-.4-1.2-1.2-1.2-2.1v-5c0-.8.4-1.6 1.2-2.1l4.3-2.5c.7-.4 1.6-.4 2.4 0l4.3 2.6c.7.4 1.2 1.2 1.2 2.1v3.3l3.8-2.2v-3.4c0-.8-.4-1.6-1.2-2.1l-8-4.7c-.7-.4-1.6-.4-2.4 0l-8.2 4.8c-.8.4-1.2 1.2-1.2 2v9.4c0 .8.4 1.6 1.2 2.1l8.1 4.7c.7.4 1.6.4 2.4 0l5.5-3.2 3.8-2.2 5.5-3.2c.7-.4 1.6-.4 2.4 0l4.3 2.5c.7.4 1.2 1.2 1.2 2.1v5c0 .8-.4 1.6-1.2 2.1l-4.2 2.5c-.7.4-1.6.4-2.4 0l-4.3-2.5c-.7-.4-1.2-1.2-1.2-2.1v-3.2l-3.8 2.2v3.3c0 .8.4 1.6 1.2 2.1l8.1 4.7c.7.4 1.6.4 2.4 0l8.1-4.7c.7-.4 1.2-1.2 1.2-2.1v-9.5c0-.8-.4-1.6-1.2-2.1z" fill="#8247e5" fill-rule="nonzero" transform="matrix(7.04961 0 0 7.04961 145 81.9191)" />
+                            </svg>
                             Sign in
                         </button>
                     </div>
