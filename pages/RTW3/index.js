@@ -1,4 +1,5 @@
-import { useState, useContext } from 'react'
+import { useState } from 'react'
+import { Image } from 'next/image'
 import LitJsSdk from 'lit-js-sdk'
 import { lit_chain, accessControlConditions, resourceId } from "../../queries/litParams.js"
 
@@ -82,6 +83,192 @@ export default function Home() {
                     <div className="p-8 text-center">
                         <div>
                             <h1 className="font-bold">Welcome, fren!</h1>
+                            <h2 className="m-2">Some AMAZING <a href="https://twitter.com/LensProtocol">@LensProtocol</a> projects, built by Road To Web3 builders 👏🏼</h2>
+                            <div className="text-xs">12:05 PM · Jul 22, 2022·Twitter Web App</div>
+                            <a href="https://twitter.com/TheRoadToWeb3/status/1550331060650512385">@TheRoadToWeb3</a>
+                        </div>
+                        <div className="flex flex-col p-2 items-center">
+
+                            <div className="p-2 w-full">
+                                <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                    <div className="md:flex">
+                                        <div className="shrink-0">
+                                            <a href="https://twitter.com/TheRoadToWeb3/status/1550331065927090179">
+                                                <img height="100" width="100" alt="Vivek" src="https://pbs.twimg.com/media/FYPclZrXkAANJGq?format=jpg&name=4096x4096" />
+                                            </a>
+                                        </div>
+                                        <div className="p-2 w-full">
+                                            <div className="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+                                                @theviveksuthar
+                                            </div>
+                                            <div>
+                                                <a href="https://road-to-lens-ashy.vercel.app">road-to-lens-ashy.vercel.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="p-2 w-full">
+                                <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                    <div className="md:flex">
+                                        <div className="shrink-0">
+                                            <a href="https://twitter.com/TheRoadToWeb3/status/1550331071216193536">
+                                                <img height="100" width="100" alt="Kidrew" src="https://pbs.twimg.com/media/FYPc1SlXoAEtYfB?format=jpg&name=large" />
+                                            </a>
+                                        </div>
+                                        <div className="p-2 w-full">
+                                            <div className="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+                                                @KillianeMenand
+                                            </div>
+                                            <div>
+                                                <a href="https://lens-social-media.killiane-menand.com">lens-social-media.killiane-menand.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="p-2 w-full">
+                                <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                    <div className="md:flex">
+                                        <div className="shrink-0">
+                                            <a href="https://twitter.com/TheRoadToWeb3/status/1550331075561414656">
+                                                <img height="100" width="100" alt="GdG" src="https://pbs.twimg.com/media/FYPeCY6XEAEqQbz?format=jpg&name=medium" />
+                                            </a>
+                                        </div>
+                                        <div className="p-2 w-full">
+                                            <div className="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+                                                @gabrieldegiuli
+                                            </div>
+                                            <div>
+                                                <a href="https://github.com/gabriel-dg/RTW3-W10-Road-to-Lens">github.com/gabriel-dg/RTW3-W10-Road-to-Lens</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="p-2 w-full">
+                                <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                    <div className="md:flex">
+                                        <div className="shrink-0">
+                                            <a href="https://twitter.com/TheRoadToWeb3/status/1550331080519081984">
+                                                <img height="100" width="100" alt="Hachikoi" src="https://pbs.twimg.com/media/FYPeaInXkAU0yPk?format=jpg&name=4096x4096" />
+                                            </a>
+                                        </div>
+                                        <div className="p-2 w-full">
+                                            <div className="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+                                                @8koi2
+                                            </div>
+                                            <div>
+                                                <a href="https://social-theta.vercel.app/profile/0x25c4">social-theta.vercel.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="p-2 w-full">
+                                <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                    <div className="md:flex">
+                                        <div className="shrink-0">
+                                            <a href="https://twitter.com/TheRoadToWeb3/status/1550331085527154688">
+                                                <img height="100" width="100" alt="LesC" src="https://pbs.twimg.com/media/FYPfLFvX0AEK-Qh?format=jpg&name=large" />
+                                            </a>
+                                        </div>
+                                        <div className="p-2 w-full">
+                                            <div className="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+                                                @lescarbonaro
+                                            </div>
+                                            <div>
+                                                <a href="https://rtw3-road-to-lens.vercel.app/profile/0x1127">rtw3-road-to-lens.vercel.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="p-2 w-full">
+                                <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                    <div className="md:flex">
+                                        <div className="shrink-0">
+                                            <a href="https://twitter.com/TheRoadToWeb3/status/1550331096067448832">
+                                                <img height="100" width="100" alt="Mike Bivens" src="https://pbs.twimg.com/media/FYPgsWPWIAE_fRF?format=jpg&name=large" />
+                                            </a>
+                                        </div>
+                                        <div className="p-2 w-full">
+                                            <div className="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+                                                @MSBivens_
+                                            </div>
+                                            <div>
+                                                <a href="https://road-to-lens-virid.vercel.app">road-to-lens-virid.vercel.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="p-2 w-full">
+                                <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                    <div className="md:flex">
+                                        <div className="shrink-0">
+                                            <a href="https://twitter.com/TheRoadToWeb3/status/1550405145044721664">
+                                                <img height="100" width="100" alt="ADIL" src="https://pbs.twimg.com/media/FX8S8GNUEAAtsfO?format=jpg&name=medium" />
+                                            </a>
+                                        </div>
+                                        <div className="p-2 w-full">
+                                            <div className="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+                                                @kazani351
+                                            </div>
+                                            <div>
+                                                <a href="">&nbsp;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="bg-slate-600 dark:bg-slate-800">
+                                <img src="/emojibest_com_Orangoutang_003.gif" alt="thumbs up" height="200" width="200" />
+                            </div>
+
+                            <div className="p-2">
+                                <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                    <div className="md:flex">
+                                        <div className="shrink-0">
+                                                <img height="100" width="100" alt="elonmusk" src="https://pbs.twimg.com/profile_images/1529956155937759233/Nyn1HZWF_400x400.jpg" />
+                                        </div>
+                                        <div className="p-2 w-full">
+                                            <div className="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+                                                @elonmusk
+                                            </div>
+                                            <div>
+                                                <a href="https://twitter.com/elonmusk">Mars & Cars, Chips & Dips</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="p-2">
+                                <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                    <div className="md:flex">
+                                        <div className="shrink-0">
+                                                <img height="100" width="100" alt="eIonmusk-fake" src="https://pbs.twimg.com/profile_images/1529956155937759233/Nyn1HZWF_400x400.jpg" />
+                                        </div>
+                                        <div className="p-2 w-full">
+                                            <div className="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+                                                @eIonmusk
+                                            </div>
+                                            <div>
+                                                <a href="https://twitter.com/eIonmusk">suspended fake account</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div className="p-8">
                             <button type="button" onClick={disconnect} className="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2">
@@ -89,7 +276,7 @@ export default function Home() {
                             </button>
                         </div>
                     </div>
-                </div>
+                </div >
             )
         } else {
             return (

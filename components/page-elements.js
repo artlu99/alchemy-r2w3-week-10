@@ -9,7 +9,7 @@ export function Header() {
     <header className="top-0 text-xs">
       <p className="float-right">
         <img className="inline" alt="Alchemy" src="https://www.gitbook.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=1.6500000953674316,format=auto/https%3A%2F%2F3169887760-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-MB17w56kk7ZnRMWdqOL%252Favatar-1631043648701.png%3Fgeneration%3D1631043649203081%26alt%3Dmedia" height="14" width="14" />
-        &nbsp;my&nbsp; 
+        &nbsp;my original&nbsp; 
         <a href="https://docs.alchemy.com/alchemy/road-to-web3/weekly-learning-challenges/10.-how-to-create-a-decentralized-twitter-with-lens-protocol">Week 10</a>&nbsp;
         <a href="https://lens-al-git-20220717-artlu99.vercel.app/">project</a>
         &nbsp;on the&nbsp;
