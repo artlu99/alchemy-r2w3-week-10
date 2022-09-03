@@ -1,6 +1,6 @@
 ## Lens-AL [by @artlu.lens](https://lenster.xyz/u/artlu.lens)
 
-A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com/) [Road to Web3](https://docs.alchemy.com/alchemy/road-to-web3/welcome-to-the-road-to-web3) [Week 10](https://docs.alchemy.com/alchemy/road-to-web3/weekly-learning-challenges/10.-how-to-create-a-decentralized-twitter-with-lens-protocol).
+A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com/) [Road to Web3](https://docs.alchemy.com/docs/welcome-to-the-road-to-web3) [Week 10](https://docs.alchemy.com/docs/how-to-create-a-decentralized-twitter-with-lens-protocol).
 
 ## A Decentralized Social Network with Lens Protocol 🌿
 
@@ -24,13 +24,12 @@ A read-only / gated community, inspired by the [Alchemy](https://www.alchemy.com
 
 ## Links
 * Week 10 kick-off [tweet](https://twitter.com/thatguyintech/status/1547585019983499268) by [@thatguyintech](https://twitter.com/thatguyintech)
-* Join the [Lenster](https://lenster.xyz) [Road To Web3](https://lenster.xyz/communities/0x25c4-0x0c) Lenster community
 * [GraphiQL Bin](https://graphiqlbin.com/) for interactive query building
   * for endpoint, use: https://api.lens.dev/
   * h/t [@gabrieldg.lens (GdG)](https://lenster.xyz/u/gabrieldg.lens)
 )
 * Lit Protocol
-  * SDK [docs](https://developer.litprotocol.com/SDK/intro)
+  * SDK [docs](https://developer.litprotocol.com/sdk/intro)
   * JS SDK API [docs](https://lit-protocol.github.io/lit-js-sdk/api_docs_html/index.html)
   * [@nader.lens](https://lenster.xyz/u/nader.lens)'s useful [example](https://github.com/dabit3/nextjs-lit-token-gating)
 
